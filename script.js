@@ -7,6 +7,32 @@ let messageProNotAvailable = document.querySelector(".messageProNotAvailable");
 let totalProductPrice = document.getElementById("totalProductPrice");
 // console.log(totalProductPrice);
 
+function changequantity(e , count){
+    e.target.parentNode.children[1].innerText = count
+    let productName =  e.target.parentNode.parentNode.children[0].innerText;
+    Products.forEach((prod) => {
+        if(prod.name === productName){
+            prod.count = count;
+        }
+    });
+}
+
+productItemList.addEventListener('click',(e)=>{
+    let count = 0;
+    if(e.target.innerText ==="+"){
+        count = Number(e.target.parentNode.children[1].innerText)
+        count++
+        changequantity(e, count)
+    }else if(e.target.innerText ==="-"){
+        count = Number(e.target.parentNode.children[1].innerText)
+       if(count > 0){
+        count--;
+        changequantity(e, count)
+       }else{
+        alert("you can't remove this item");
+       }  
+    }
+})
 
 
 function displayProductList(){
