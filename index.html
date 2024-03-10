@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* CSS to style links */
+        /* Set color for unvisited links */
+        a {
+            color: blue;
+            text-decoration: none;
+            /* Removes default underline */
+        }
+
+        /* Set color for visited links */
+        a:visited {
+            color: purple;
+        }
+
+        /* Set color for links on hover */
+        a:hover {
+            color: red;
+        }
+
+        /* Set color for links when clicked */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <div class="m-5 flex border border-black flex-col w-96 p-2">
+        <p class="m-2 text-2xl text-center font-bold">Products</p>
+
+        <div class="flex bg-red-100 justify-between p-5 text-center font-medium">
+            <p>Product-1</p>
+            <p id="productValue">Product Value </p>
+            <div class="flex ">
+                <button class="bg-red-500 border border-black h-7 w-7 rounded-full text-white">-</button>
+                <span class="mx-5"> count</span>
+                <button class="bg-green-600 border border-black h-7 w-7 rounded-full text-white">+</button>
+            </div>
+        </div>
+
+        <div class="flex bg-red-100 m-2 justify-between p-5 text-center font-medium">
+            <p>Total</p>
+            <span class="mx-5"> count</span>
+        </div>
+
+    </div>
+    
+    <div class="m-5 flex border border-black flex-col w-96 p-2">
+        <p class="m-2 text-2xl text-center font-bold">Products</p>
+
+        <div class="flex bg-red-100 justify-between p-5 text-center font-medium">
+            <p>Product-1</p>
+            <p id="productValue">Product Value </p>
+            <div class="flex ">
+                <button class="bg-red-500 border border-black h-7 w-7 rounded-full text-white">-</button>
+                <span class="mx-5"> count</span>
+                <button class="bg-green-600 border border-black h-7 w-7 rounded-full text-white">+</button>
+            </div>
+        </div>
+
+        <div class="flex bg-red-100 m-2 justify-between p-5 text-center font-medium">
+            <p>Total</p>
+            <span class="mx-5"> count</span>
+        </div>
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
