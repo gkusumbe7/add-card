@@ -35,29 +35,23 @@
 <body>
     <div class="flex">
     <div class="m-5 flex border border-black flex-col p-2">
-
         <p class="m-2 text-2xl text-center font-bold">Products</p>
-
         <div id="productItemList" class="flex flex-col border border-black bg-red-100 justify-between p-5 text-center font-medium">
-            
         </div>
-        <!-- <div class="flex bg-red-100 m-2 justify-between p-5 text-center font-medium">
-            <p>Total</p>
-            <span class="mx-5"> count</span>
-        </div> -->
-
     </div>
     
     <div class="m-5 flex border border-black flex-col w-96 p-2">
 
         <p class="m-2 text-2xl text-center font-bold">Total Product Price</p>
-
-        <div id="productAddedList" class="flex bg-red-100 justify-between p-5 text-center font-medium">
+        <div id="productAddedList"> 
+            <p class="text-center">Product Not Added </p>
         </div>
-
-        <div  class="flex bg-red-100 m-2 justify-between p-5 text-center font-medium">
-            <p>Total</p>
-            <span id="totalProductPrice" class="mx-5"> count</span>
+        <div   class="flex bg-red-100 m-2 p-5  font-medium">
+                 <!-- <p id="totalPrice" class="flex "> -->
+                <p class="text-left w-32">Total</p>
+                <p class="text-center w-32"> = </p>
+                <p id="priceIS" class="text-center w-32">00</p>
+            </p>
         </div>
 
     </div>
