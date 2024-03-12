@@ -22753,7 +22753,7 @@ const shoopingProductData = [
         id: 1,
         name: "Laptop",
         category: "Electronics",
-        price: 48999.99,
+        price: 56000,
         stock: 50,
         imgURL: "https://m.media-amazon.com/images/I/61+r3+JstZL._AC_UF1000,1000_QL80_.jpg"
       },
@@ -22761,7 +22761,7 @@ const shoopingProductData = [
         id: 2,
         name: "Smartphone",
         category: "Electronics",
-        price: 8699.99,
+        price: 8000,
         stock: 100,
         imgURL: "https://shorturl.at/glwR9"
       },
@@ -22769,7 +22769,7 @@ const shoopingProductData = [
         id: 3,
         name: "Headphones",
         category: "Electronics",
-        price: 899.99,
+        price: 700,
         stock: 200,
         imgURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVlzpQcNhIBi57EOjfGQklQCJaa5468Vzhw&usqp=CAU"
       },
@@ -22777,7 +22777,7 @@ const shoopingProductData = [
         id: 4,
         name: "Digital Camera",
         category: "Electronics",
-        price: 56299.99,
+        price: 45000,
         stock: 30,
         imgURL: "https://rukminim2.flixcart.com/image/312/312/k9oj8280/dslr-camera/y/h/2/coolpix-coolpix-p950-nikon-original-imafrexf5pw6q8ug.jpeg?q=70"
       },
@@ -22785,7 +22785,7 @@ const shoopingProductData = [
         id: 5,
         name: "Wireless Mouse",
         category: "Electronics",
-        price: 2966.99,
+        price: 450,
         stock: 80,
         imgURL: "https://rukminim2.flixcart.com/image/416/416/xif0q/mouse/g/k/j/toad-ii-por1784-portronics-original-imagvz876zumuwje.jpeg?q=70&crop=false"
       }
