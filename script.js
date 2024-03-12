@@ -1,21 +1,65 @@
 let productItemList = document.getElementById("productItemList");
 // console.log(productList);
-let productAdded = document.getElementById("productAddedList");
+// let productAdded = document.getElementById("productAddedList");
 // console.log(productAdded);
+let selectProductItemList = document.getElementById("productAddedList");
+// console.log(selectProductItemList);
 let messageProNotAvailable = document.querySelector(".messageProNotAvailable");
 // console.log(messageProNotAvailable);
-let totalProductPrice = document.getElementById("totalProductPrice");
+let totalProductPrice = document.getElementById("totalPrice");
 // console.log(totalProductPrice);
 
 function changequantity(e , count){
+
     e.target.parentNode.children[1].innerText = count
     let productName =  e.target.parentNode.parentNode.children[0].innerText;
-    Products.forEach((prod) => {
-        if(prod.name === productName){
-            prod.count = count;
+    shoopingProductData.forEach((e) => {
+        if(e.name === productName){
+            e.count = count;
         }
     });
+
+    selectProductItemList.innerHTML =" ";
+    let total = 0;
+
+    shoopingProductData.forEach((e) =>{
+    if(e.count > 0){
+        let div = document.createElement("div");
+        div.innerHTML= `
+        <div class="flex bg-red-100 justify-between p-5 text-center font-medium">
+         <p class="text-left w-32">${e.name}</p>
+         <p class="text-center w-32">${e.count}</p>
+        <span id="totalProductPrice" class="text-center w-32">${e.price}</span>
+        </div>
+        `
+        selectProductItemList.append(div);
+        total += e.count * e.price
+        let priceIS = document.getElementById("priceIS");
+        priceIS.innerHTML =`${total} ` 
+    }
+    
+
+    
+ });
+ console.log(selectProductItemList.children.length);
+
+ if(selectProductItemList.children.length === 0){
+     
+     let messageforEmptyCart = document.createElement('p');
+     messageforEmptyCart.innerHTML = 'Product Not Added'
+     messageforEmptyCart.style.textAlign ='center';
+     selectProductItemList.append(messageforEmptyCart);
+
+     priceIS.innerHTML =`0` 
+  }
+ 
+
 }
+
+
+
+
+
 
 productItemList.addEventListener('click',(e)=>{
     let count = 0;
